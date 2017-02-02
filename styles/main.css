@@ -154,6 +154,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
   width: 50%; }
 
 .turns {
