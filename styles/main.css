@@ -153,7 +153,8 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  width: 50%; }
 
 .turns {
   align-items: center;
@@ -177,6 +178,9 @@ main {
     justify-content: center;
     opacity: 1; }
 
+.result-msg {
+   width: 50%;
+}
 .game-status.game-over {
   display: none; }
 
