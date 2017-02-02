@@ -77,7 +77,7 @@
         turnsDisplay.appendChild(turn);
 
         const turnSprite = document.createElement('img');
-        turnSprite.src = 'http://bit.ly/2ktXofQ';
+        turnSprite.src = 'https://bit.ly/2ktXofQ';
         turnSprite.alt = 'potion';
         turn.appendChild(turnSprite);
       }
