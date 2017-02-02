@@ -123,7 +123,7 @@
 
     // reset game
     function resetGame() {
-      turns = 8;
+      turns = currentWord.length + 2;
       turnUpdate();
       guesses = [];
 
