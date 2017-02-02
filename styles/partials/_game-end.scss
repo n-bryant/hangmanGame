@@ -1,0 +1,27 @@
+.game-result {
+  display: none;
+  height: 400px;
+  margin: 2rem auto 2rem auto;
+  opacity: 0;
+  width: 85%;
+
+  &.game-over {
+    align-items: center;
+    animation: fade-in 1s ease forwards;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+  }
+}
+
+.game-status {
+  &.game-over {
+    display: none;
+  }
+}
+
+.guess-form {
+  &.game-over {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+body {
+  font: 16px/1.6 $primaryFont;
+}
+
+header {
+  color: $creme;
+  font-size: 4rem;
+}
+
+.word {
+  color: $sky;
+  font: 6rem $wordFont;
+  text-transform: uppercase;
+}
+
+.char {
+  &.descend {
+    animation: descend 1s ease forwards;
+  }
+}
+
+.turns {
+  font-size: 2rem;
+}
+
+.guess-form {
+  input {
+    &.user-guess {
+      color: $sky;
+      font: 2rem $wordFont;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &.guess {
+      color: $creme;
+      font: 2rem $primaryFont;
+
+      &:active {
+        color: $blueShadow;
+      }
+    }
+  }
+}
+
+.game-status {
+  font-size: 2rem;
+}
+
+.new-game {
+  background: none;
+  border: none;
+  color: black;
+  font: 2rem $primaryFont;
+  &:active {
+    color: $sky;
+  }
+}

@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes descend {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1; } }
+body {
+  font: 16px/1.6 "Bahiana", cursive; }
+
+header {
+  color: #FFBB7C;
+  font-size: 4rem; }
+
+.word {
+  color: #4aa8c0;
+  font: 6rem "Bevan", cursive;
+  text-transform: uppercase; }
+
+.char.descend {
+  animation: descend 1s ease forwards; }
+
+.turns {
+  font-size: 2rem; }
+
+.guess-form input.user-guess {
+  color: #4aa8c0;
+  font: 2rem "Bevan", cursive;
+  text-align: center;
+  text-transform: uppercase; }
+.guess-form input.guess {
+  color: #FFBB7C;
+  font: 2rem "Bahiana", cursive; }
+  .guess-form input.guess:active {
+    color: #156073; }
+
+.game-status {
+  font-size: 2rem; }
+
+.new-game {
+  background: none;
+  border: none;
+  color: black;
+  font: 2rem "Bahiana", cursive; }
+  .new-game:active {
+    color: #4aa8c0; }
+
+body {
+  background-color: #734921;
+  background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png"); }
+
+header {
+  text-align: center; }
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%; }
+
+.new-game {
+  font-size: 3rem;
+  margin: 2rem; }
+
+.word {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 85%; }
+
+.guess-form input {
+  display: block;
+  margin: 1rem auto 0 auto; }
+  .guess-form input[type='text'] {
+    border-radius: 5px;
+    width: 4rem; }
+  .guess-form input[type='submit'] {
+    background: #156073;
+    line-height: 2rem;
+    margin: 1rem auto;
+    padding: .5rem;
+    width: 9rem; }
+    .guess-form input[type='submit']:hover {
+      cursor: pointer; }
+    .guess-form input[type='submit']:active {
+      background: #FFBB7C; }
+
+.new-game-container .new-game:hover {
+  cursor: pointer; }
+
+.word-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.turns {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto; }
+  .turns .turn {
+    width: 50px; }
+
+.game-result {
+  display: none;
+  height: 400px;
+  margin: 2rem auto 2rem auto;
+  opacity: 0;
+  width: 85%; }
+  .game-result.game-over {
+    align-items: center;
+    animation: fade-in 1s ease forwards;
+    display: flex;
+    justify-content: center;
+    opacity: 1; }
+
+.game-status.game-over {
+  display: none; }
+
+.guess-form.game-over {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

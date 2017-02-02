@@ -1,0 +1,25 @@
+.guess-form {
+  input {
+    display: block;
+    margin: 1rem auto 0 auto;
+
+    &[type='text'] {
+      border-radius: 5px;
+      width: 4rem;
+    }
+    &[type='submit'] {
+      background: $blueShadow;
+      line-height: 2rem;
+      margin: 1rem auto;
+      padding: .5rem;
+      width: 9rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        background: $creme;
+      }
+    }
+  }
+}

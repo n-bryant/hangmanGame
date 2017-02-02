@@ -1,0 +1,26 @@
+.new-game-container {
+  .new-game {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.word-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.turns {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+
+  .turn {
+    width: 50px;
+  }
+}

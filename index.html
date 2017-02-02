@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta>
+    <title>TIY - Hangman</title>
+    <link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Hangman</h1>
+    </header>
+    <main>
+      <section class='word-container'>
+        <ul class='word'>
+        </ul>
+        <ul class='turns'>
+          <li class='turn'></li>
+          <li class='turn'></li>
+          <li class='turn'></li>
+          <li class='turn'></li>
+          <li class='turn'></li>
+          <li class='turn'></li>
+          <li class='turn'></li>
+          <li class='turn'></li>
+        </ul>
+      </section>
+
+      <form class='guess-form'>
+        <label for='user-guess'><input class='user-guess' type='text' name='player-guess' pattern="[A-Za-z]" placeholder='a' maxlength='1' required="1"></label>
+        <label for='guess'><input class='guess' type='submit' value='guess'></label>
+      </form>
+      <p class="game-status"></p>
+      <section class='game-result'>
+      </section>
+      <div class='new-game-container'>
+        <button class="new-game">new word</button>
+      </div>
+
+    </main>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
