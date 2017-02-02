@@ -16,3 +16,9 @@
     opacity: 1;
   }
 }
+
+@keyframes float {
+  50% {
+    transform: translateY(25%);
+  }
+}
