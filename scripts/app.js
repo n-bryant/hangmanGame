@@ -77,7 +77,7 @@
         turnsDisplay.appendChild(turn);
 
         const turnSprite = document.createElement('img');
-        turnSprite.src = 'https://bit.ly/2ktXofQ';
+        turnSprite.src = 'https://vignette2.wikia.nocookie.net/herebemonsters/images/6/6b/Revive-Potion-Sprite.png/revision/latest?cb=20140324041141';
         turnSprite.alt = 'potion';
         turn.appendChild(turnSprite);
       }
