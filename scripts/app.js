@@ -73,7 +73,7 @@
       // add a list item for the number of turns
       for (let index = 0; index < turns; index++) {
         const turn = document.createElement('li');
-        turn.classList = 'turn';
+        turn.className = 'turn';
         turnsDisplay.appendChild(turn);
 
         const turnSprite = document.createElement('img');
