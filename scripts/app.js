@@ -76,11 +76,11 @@
       // add a list item for the number of turns
       for (let index = 0; index < turns; index++) {
         const turn = document.createElement('li');
-        turn.classList = 'turn';
+        turn.className = 'turn';
         turnsDisplay.appendChild(turn);
 
         const turnSprite = document.createElement('img');
-        turnSprite.src = 'http://bit.ly/2ktXofQ';
+        turnSprite.src = 'https://vignette2.wikia.nocookie.net/herebemonsters/images/6/6b/Revive-Potion-Sprite.png/revision/latest?cb=20140324041141';
         turnSprite.alt = 'potion';
         turn.appendChild(turnSprite);
       }
@@ -126,7 +126,11 @@
 
     // reset game
     function resetGame() {
-      turns = 8;
+      if (currentWord.length <= 6) {
+        turns = 8;
+      } else {
+        turns = 10;
+      }
       turnUpdate();
       guesses = [];
 

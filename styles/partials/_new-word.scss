@@ -22,5 +22,9 @@
 
   .turn {
     width: 50px;
+    
+    &:hover {
+      animation: float 1s ease;
+    }
   }
 }

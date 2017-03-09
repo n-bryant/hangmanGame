@@ -65,6 +65,12 @@ table {
     transform: translateY(-100%); }
   100% {
     opacity: 1; } }
+
+@keyframes float {
+   50% {
+      transform: translateY(25%);
+   }
+}
 body {
   font: 16px/1.6 "Bahiana", cursive; }
 
@@ -153,7 +159,9 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%; }
 
 .turns {
   align-items: center;
@@ -163,6 +171,10 @@ main {
   margin: 0 auto; }
   .turns .turn {
     width: 50px; }
+
+.turn:hover {
+   animation: float 1s ease;
+}
 
 .game-result {
   display: none;
@@ -177,6 +189,9 @@ main {
     justify-content: center;
     opacity: 1; }
 
+.result-msg {
+   width: 50%;
+}
 .game-status.game-over {
   display: none; }
 
