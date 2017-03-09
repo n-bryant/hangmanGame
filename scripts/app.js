@@ -39,25 +39,23 @@
     function checkGuess(guess) {
       // prevent user from making same guess more than once
       if (guesses.indexOf(guess) === -1) {
-        // decrement turns
-        turns--;
-        turnUpdate();
 
-        // denote whether letter was a correct guess
         const chars = document.querySelectorAll('.char');
         let guessStatus = '';
-        for (let index = 0; index < chars.length; index++) {
-          if (currentWord.charAt(index) === guess) {
-            chars[index].innerHTML = guess;
-            chars[index].classList.add('descend');
+        // check whether guess is part of current word
+        if (currentWord.includes(guess)) {
+          for (let index = 0; index < chars.length; index++) {
+            if (currentWord.charAt(index) === guess) {
+              chars[index].innerHTML = guess;
+              chars[index].classList.add('descend');
+            }
+            guessStatus += chars[index].innerHTML;
           }
-          guessStatus += chars[index].innerHTML;
+        } else {
+          // decrement turns
+          turns--;
+          turnUpdate();
         }
-
-        // store guess
-        guesses.push(guess);
-        storage.set();
-        currStatus.innerHTML = guesses.toString();
 
         // if loss
         if (turns === 0 && guessStatus !== currentWord) {
@@ -66,6 +64,11 @@
           gameEnd(true);
         }
       }
+
+      // store guess
+      guesses.push(guess);
+      storage.set();
+      currStatus.innerHTML = guesses.toString();
     }
 
     function turnUpdate() {
